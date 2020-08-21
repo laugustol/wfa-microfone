@@ -3,10 +3,10 @@ r = sr.Recognizer()
 with sr.Microphone(device_index=0) as source:
     audio = r.listen(source)
     
-try:
-    print("You said " + r.recognize_google(audio))
-except LookupError:
-    print("Could not understand audio")"""
+    try:
+        print("You said " + r.recognize_google(audio))
+    except LookupError:
+        print("Could not understand audio")"""
 import audioop,math
 from threading import Timer
 import pyaudio
